@@ -1,38 +1,79 @@
-.App {
+#root {
+  padding-top: 30px;
+  max-width: 1300px;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #f1f1f1;
+  
+}
+
+
+.goods-field::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.goods-block {
+  width: 16%;
+  margin: 1%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  float: left;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.goods-block p{
+  font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.goods-block img {
+  max-width: 50px;
+  display: block;
+  margin: 20px auto;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.add-to-cart{
+  padding: 5px 20px;
+  background-color: bisque;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.add-to-cart:hover{
+  background-color: #fdc079;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cart-img{
+  width: 20px;
 }
+.cart-table thead th{
+  background-color: bisque;
+  padding: 10px;
+}
+.minus-item,
+.remove-item{
+  width: 60px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.minus-item{
+  margin-right: 10px;
+}
+.cart-total{
+  font-size: 15px;
+  font-weight: 700;
+  padding-left: 155px;
+}
+
+.cart-fooret td:nth-last-child(-n+2){
+  background-color: bisque;
+  padding: 10px;
+}
+
+
+
